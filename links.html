@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGS Analítica — Links</title>
+  <meta name="description" content="Cromatografía e Instrumental Analítico. AGS Analítica S.A., Buenos Aires." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #0B1F3A;
+      --navy-card: #112240;
+      --navy-btn:  #162C4A;
+      --border:    rgba(255,255,255,0.08);
+      --border-h:  rgba(255,255,255,0.15);
+      --blue:      #2C8FE8;
+      --green:     #34C97A;
+      --purple:    #9B72E8;
+      --text:      #C8DCF0;
+      --muted:     #4A6A8A;
+      --label:     #5A8AAF;
+    }
+
+    html { background: var(--navy); }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px 48px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .logo-wrap {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .brand-name span { color: var(--blue); }
+
+    .tagline {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ── MAIN ── */
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── CATEGORY LABEL ── */
+    .cat {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--label);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 20px 0 7px 2px;
+    }
+
+    /* ── BUTTON ── */
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      padding: 13px 15px;
+      margin-bottom: 7px;
+      background: var(--navy-btn);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:hover, .btn:focus {
+      background: #1C3252;
+      border-color: var(--border-h);
+      outline: none;
+    }
+
+    .btn:active { transform: scale(0.985); }
+
+    /* ── ICON ── */
+    .ico {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ico-blue   { background: #0D2A42; border: 0.5px solid #1A4A7A; }
+    .ico-green  { background: #0D3020; border: 0.5px solid #1A5030; }
+    .ico-purple { background: #1C1430; border: 0.5px solid #3A2860; }
+    .ico-wa     { background: #0D2810; border: 0.5px solid #1A4820; }
+
+    .ico svg { width: 16px; height: 16px; }
+
+    /* ── BUTTON TEXT ── */
+    .btn-body { flex: 1; min-width: 0; }
+
+    .btn-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #C8DCF0;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-sub {
+      font-size: 15px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .badge-new {
+      display: inline-block;
+      font-size: 8px;
+      font-weight: 600;
+      background: #0D3D2A;
+      color: #3DCC8A;
+      border: 0.5px solid #1A6040;
+      border-radius: 4px;
+      padding: 1px 5px;
+      vertical-align: middle;
+      margin-left: 5px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── SEPARADOR ── */
+    .sep {
+      height: 0.5px;
+      background: rgba(255,255,255,0.06);
+      margin: 14px 0 4px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 0.5px solid rgba(255,255,255,0.06);
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .footer a {
+      font-size: 10px;
+      color: var(--label);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover { color: var(--muted); }
+
+    /* ── WEBINAR CONDICIONAL ── */
+    #webinar-block { display: none; }
+    #webinar-block.visible { display: block; }
+
+    @media (max-width: 480px) {
+      body { padding: 32px 14px 40px; }
+    }
+  </style>
+
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,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" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HEADER — logo + marca
+  ══════════════════════════════════════ -->
+  <header class="header">
+    <div class="logo-wrap">
+      <!-- Si el logo no carga, muestra el texto de fallback -->
+      <img src="logo_ags_crop.png" alt="AGS Analítica" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';" />
+      <span id="logo-fallback" style="display:none; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; color:#007CC3; text-align:center; line-height:1.2;">AGS<br>ANALÍTICA</span>
+    </div>
+    <div class="brand-name">AGS ANALÍTICA</div>
+    <div class="tagline">Cromatografía · Instrumental Analítico</div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       LINKS
+       INSTRUCCIONES DE EDICIÓN:
+       - Cambiar href="" con el link real
+       - Cambiar el texto entre las etiquetas
+       - Para mostrar el webinar: cambiar id="webinar-block" class="webinar-block visible"
+       - Para ocultarlo: sacar la clase "visible"
+  ══════════════════════════════════════ -->
+  <main class="container">
+
+    <!-- EQUIPOS -->
+    <div class="cat">Equipos</div>
+    <a class="btn" href="https://www.instagram.com/p/DXNGUBFGgbs/" target="_blank" rel="noopener">
+      <div class="ico ico-blue">
+        <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="8" rx="1.5" stroke="#2C8FE8" stroke-width="1.2"/><line x1="5" y1="4" x2="5" y2="12" stroke="#2C8FE8" stroke-width="1"/><circle cx="8.5" cy="8" r="1.5" fill="#2C8FE8"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">EVOQ DART-MS+</div>
+        <div class="btn-sub">Ver publicación →</div>
+      </div>
+    </a>
+
+    <!-- SOPORTE TÉCNICO -->
+    <div class="cat">Soporte técnico</div>
+    <a class="btn" href="https://www.agsanalitica.com/es/soporte-tecnico" target="_blank" rel="noopener">
+      <div class="ico ico-blue">
+        <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#2C8FE8" stroke-width="1.2"/><line x1="8" y1="5" x2="8" y2="8.5" stroke="#2C8FE8" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="10.5" r="0.8" fill="#2C8FE8"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">Soporte técnico especializado</div>
+        <div class="btn-sub">Ver servicios →</div>
+      </div>
+    </a>
+
+    <!-- NOTAS TÉCNICAS -->
+    <div class="cat">Notas técnicas</div>
+    <a class="btn" href="https://www.agsanalitica.com/es/notas-tecnicas" target="_blank" rel="noopener">
+      <div class="ico ico-green">
+        <svg viewBox="0 0 16 16" fill="none"><rect x="3" y="2" width="10" height="12" rx="1.5" stroke="#34C97A" stroke-width="1.2"/><line x1="5.5" y1="5.5" x2="10.5" y2="5.5" stroke="#34C97A" stroke-width="1"/><line x1="5.5" y1="8" x2="10.5" y2="8" stroke="#34C97A" stroke-width="1"/><line x1="5.5" y1="10.5" x2="8.5" y2="10.5" stroke="#34C97A" stroke-width="1"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">Notas técnicas de cromatografía</div>
+        <div class="btn-sub">Ver todas las notas →</div>
+      </div>
+    </a>
+
+    <!-- WEBINAR — agregar clase "visible" para mostrar, quitarla para ocultar -->
+    <div id="webinar-block">
+      <div class="cat">Webinar</div>
+      <a class="btn" href="https://www.instagram.com/p/REEMPLAZAR/" target="_blank" rel="noopener">
+        <div class="ico ico-purple">
+          <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="8" rx="1.5" stroke="#9B72E8" stroke-width="1.2"/><path d="M6 7l3.5-2v4L6 7z" fill="#9B72E8"/><line x1="5" y1="13" x2="11" y2="13" stroke="#9B72E8" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="btn-body">
+          <div class="btn-title">Validación de métodos HPLC — 24 abril</div>
+          <div class="btn-sub">Inscribirse →</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="sep"></div>
+
+    <!-- CONSUMIBLES -->
+    <div class="cat">Consumibles</div>
+    <a class="btn" href="https://viales.com.ar" target="_blank" rel="noopener">
+      <div class="ico ico-blue">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M6 2h4v6l2 5H4l2-5V2z" stroke="#2C8FE8" stroke-width="1.1" stroke-linejoin="round"/><line x1="5.5" y1="6" x2="10.5" y2="6" stroke="#2C8FE8" stroke-width="0.9"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">Viales, filtros y consumibles de laboratorio</div>
+        <div class="btn-sub">viales.com.ar →</div>
+      </div>
+    </a>
+
+    <a class="btn" href="https://viales.com.ar/?selector=open" target="_blank" rel="noopener">
+      <div class="ico ico-blue">
+        <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" stroke="#2C8FE8" stroke-width="1.2"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4" stroke="#2C8FE8" stroke-width="1" stroke-linecap="round"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">Elegí tus viales</div>
+        <div class="btn-sub">Selector por equipo →</div>
+      </div>
+    </a>
+
+    <div class="sep"></div>
+
+    <!-- CONTACTO -->
+    <a class="btn" href="https://wa.me/541156934883" target="_blank" rel="noopener">
+      <div class="ico ico-wa">
+        <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#34C97A" stroke-width="1.2"/><path d="M5.5 5.5c.3-.3.7-.3 1 0l.8.8c.2.2.2.5 0 .7l-.4.4c.3.5.7 1 1.2 1.4l.4-.4c.2-.2.5-.2.7 0l.8.8c.3.3.3.7 0 1C9.7 10.4 8 10 6.5 8.5S5.1 6.2 5.5 5.5z" fill="#34C97A"/></svg>
+      </div>
+      <div class="btn-body">
+        <div class="btn-title">WhatsApp</div>
+        <div class="btn-sub">Respondemos en el día →</div>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <a href="https://www.agsanalitica.com" target="_blank" rel="noopener">agsanalitica.com</a>
+    <a href="https://www.linkedin.com/company/ags-analitica" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.youtube.com/channel/UCXRwKhjt_q_HVkXl4sjmfvg" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/agsanalitica/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+</body>
+</html>
